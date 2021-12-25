@@ -1,0 +1,17 @@
+{
+    "name": "sik/memory",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Sik\\Memory\\": "src/",
+            "Sik\\Memory\\Controller\\": "src/controller/",
+            "Sik\\Memory\\Entity\\": "src/model/entity/",
+            "Sik\\Memory\\Repository\\": "src/model/repository/",
+            "Sik\\Memory\\Utility\\": "src/model/utility/"
+
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

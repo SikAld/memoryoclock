@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory</title>
+    <link rel="icon" type="image/x-icon" href="./dist/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./dist/css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        Jeu du memory
+    </header>
+    <div id="content">
+        <div id="grille" class="grille">
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img1"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img2"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img3"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img4"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img5"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img6"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img7"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img8"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img9"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img10"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img11"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img12"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img13"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img14"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img15"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img16"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img17"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img18"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img19"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img20"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img21"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img22"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img23"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img24"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img25"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img26"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img27"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img28"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img29"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img30"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img31"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img32"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img33"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img34"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img35"/>
+            <img src="./dist/img/fond.jpg" alt="Une belle image de canard" class="vignette" id="img36"/>
+
+            <br/>
+        </div>
+        <div id="progress" class="progress">
+            <label for="file">Temps restant : <span id="timeleft"></span></label><br/>
+            <progress id="file" value="60" max="60"> 32s </progress>
+        </div>
+
+
+    </div>
+    <div id="lose">
+        <h2>Le temps est écoulé !</h2>
+        <button onclick="location.reload();">Relancer</button>
+        <br/>
+        <br/>
+        <div class="best-records">
+
+        </div>
+    </div>
+    <div id="win">
+        <h2>Bravo! Tu as gagné!! </h2>
+
+        <div id="username-form">
+            <label for="username-input">Entrez votre nom pour sauvegarder ton score : </label><br/>
+            <input type="text" name="username-input" id="username-input" required/><br/>
+            <button onclick="save();" id="save-score">Enregistrer</button>
+        </div>
+        <div class="best-records">
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script type="text/javascript" src="./dist/js/memory.js">   </script>
+</body>
+</html>
